@@ -71,9 +71,9 @@ function gotValue(value) {
     ipAddress = splitString[7];
     connectedSSID = splitString[8];
     //here is where time can go
-    if (splitString[9]!=null) {
-      document.getElementById("currentTimeID").innerHTML = splitString[9];
-    }
+    // if (splitString[9]!=null) {
+    //   document.getElementById("currentTimeID").innerHTML = splitString[9];
+    // }
 
     if (wifiConnected) {
       otaStartButton.show();
@@ -317,13 +317,6 @@ function gotValue(value) {
   if (splitString[0]=='sdnsip') {//sec dns
     staticSecondaryDNSInput.value(splitString[1]);
   }
-  if (splitString[0]=='udpBla') {//udp blast count
-    udpBlastCountInput.value(splitString[1]);
-  }
-  if (splitString[0]=='udpTim') {//udp time
-    udpBlastTimeInput.value(splitString[1]);
-  }
-
   if (splitString[0]=='highSpd') {//high speed mode
     if (splitString[1]=='t') {
       highSpeedEnableCheckbox.checked(true);

@@ -97,8 +97,6 @@ function showAllParam() {
 
 }
 function hideAllParam() {
-  // udpEnabled = false;
-  // tcpEnabled = false;
   ssidTitle.hide();
   ssidInput.hide();
   ssidPw.hide();
