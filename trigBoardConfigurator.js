@@ -500,7 +500,7 @@ function setup() {
   // udpSaveButton.mousePressed(udpSaveCommand);
   //**************************************
   mqttEnableTitle = createElement('h4', 'mqtt Enabled: ');
-  mqttEnableTitle.position(10, udpBlastTimeTitle.size().height+udpBlastTimeTitle.y+5);
+  // mqttEnableTitle.position(10, udpBlastTimeTitle.size().height+udpBlastTimeTitle.y+5);
   mqttEnableCheckbox = createCheckbox('', false);
   mqttEnableCheckbox.position(mqttEnableTitle.size().width+mqttEnableTitle.x+10, mqttEnableTitle.size().height+mqttEnableTitle.y);
   mqttEnableButton = createButton('Save');
